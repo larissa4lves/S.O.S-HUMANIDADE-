@@ -21,37 +21,31 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
+	//@NotNull
 	@Size(min =3, max =30)
 	public String nome;
 	
-	@NotNull
+	//@NotNull
 	private double preco;
 	
-	@NotNull
+	//@NotNull
 	@Size(min = 5, max= 100)
 	private String descricao;
 	
-	@NotNull
+	//@NotNull
 	@Size(min = 5, max= 300)
 	private String imagens;
 	
-	@NotNull
+	//@NotNull
 	private int qt_produto;
 	
-	@NotNull
+	//@NotNull
 	private boolean produto_ativo ;
 	
 	
 	@ManyToOne
 	@JsonIgnoreProperties("produto") // se der erro foi aqui
 	private Categoria categoria;
-
-	
-	
-	
-	
-	
 	
 	public Categoria getCategoria() {
 		return categoria;

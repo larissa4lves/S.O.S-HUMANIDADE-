@@ -22,15 +22,15 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id_categoria;
 	
-	@NotNull
+	//@NotNull
 	@Size(min = 5, max =50)
 	private String nome_categoria;
 	
-	@NotNull
+	//@NotNull
 	@Size(min=10 , max = 300)
 	private String imgem_categoria;
 	
-	@NotNull
+	//@NotNull
 	@Size(min=5 , max= 200)
 	private String descricao_categoria;
 	
